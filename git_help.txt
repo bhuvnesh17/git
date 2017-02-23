@@ -14,6 +14,14 @@ git push origin <Branch Name>
 // to get the updated code 
 git pull origin <Branch Name>
 
+// create a new branch
+// -b creates a new branch
+git checkout -b <branch-name>
+
+// if not with -b then its two lines
+git branch <branch-name>
+git checkout <branch-name>
+
 // when you are in a branch and want to merge it to master
 
 // first go to master branch
@@ -22,3 +30,4 @@ git checkout master
 git merge <Branch Name>
 // finally push the latest code to master
 git push origin master
+
