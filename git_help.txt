@@ -1,0 +1,24 @@
+// to clone code from a repository online
+git clone <URL>
+// to make sure we dont have differences
+git status
+// to go to a branch
+git checkout <Branch Name>
+
+// go to the project directory you want to push
+
+git add .
+git commit -m "your message"
+git push origin <Branch Name>
+
+// to get the updated code 
+git pull origin <Branch Name>
+
+// when you are in a branch and want to merge it to master
+
+// first go to master branch
+git checkout master
+// then merge the branch into master
+git merge <Branch Name>
+// finally push the latest code to master
+git push origin master
