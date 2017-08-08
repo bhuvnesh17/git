@@ -31,3 +31,9 @@ git merge <Branch Name>
 // finally push the latest code to master
 git push origin master
 
+Best way to merge:
+
+git checkout master
+git pull origin master
+git merge test
+git push origin master
