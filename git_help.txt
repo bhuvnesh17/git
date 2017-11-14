@@ -37,3 +37,14 @@ git checkout master
 git pull origin master
 git merge test
 git push origin master
+
+This command is used to discard changes in working directory -
+
+git checkout -- .
+https://git-scm.com/docs/git-checkout
+
+In git command, stashing of untracked files is achieved by using:
+
+git stash -u
+http://git-scm.com/docs/git-stash
+
