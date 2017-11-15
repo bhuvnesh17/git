@@ -24,8 +24,14 @@ git checkout <branch-name>
 
 // when you are in a branch and want to merge it to master
 
+git checkout master
+git merge test
+git push origin master
+
 // first go to master branch
 git checkout master
+// then pull the latest code
+git pull origin master
 // then merge the branch into master
 git merge <Branch Name>
 // finally push the latest code to master
