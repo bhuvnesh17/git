@@ -54,3 +54,17 @@ In git command, stashing of untracked files is achieved by using:
 git stash -u
 http://git-scm.com/docs/git-stash
 
+
+To add git tags under releases: 
+
+git tag -a v1.0.3 -m "Updated Licenses"
+git push origin v1.0.3
+
+
+use the --delete option (or -d if your git version is older than 1.8.0):
+
+git push --delete origin tagname
+
+If you also need to delete the local tag, use:
+
+git tag --delete tagname
