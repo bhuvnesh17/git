@@ -22,49 +22,46 @@ git checkout -b <branch-name>
 git branch <branch-name>
 git checkout <branch-name>
 
-// when you are in a branch and want to merge it to master
 
-git checkout master
-git merge test
-git push origin master
 
 // first go to master branch
 git checkout master
+
 // then pull the latest code
 git pull origin master
+
 // then merge the branch into master
 git merge <Branch Name>
+
 // finally push the latest code to master
 git push origin master
 
-Best way to merge:
+//Best way to merge:
 
 git checkout master
 git pull origin master
 git merge test
 git push origin master
 
-This command is used to discard changes in working directory -
-
+//This command is used to discard changes in working directory -
+//https://git-scm.com/docs/git-checkout
 git checkout -- .
-https://git-scm.com/docs/git-checkout
 
-In git command, stashing of untracked files is achieved by using:
-
+//In git command, stashing of untracked files is achieved by using:
+//http://git-scm.com/docs/git-stash
 git stash -u
-http://git-scm.com/docs/git-stash
 
 
-To add git tags under releases: 
-
+//To add git tags under releases: 
 git tag -a v1.0.3 -m "Updated Licenses"
 git push origin v1.0.3
 
 
-use the --delete option (or -d if your git version is older than 1.8.0):
-
+//use the --delete option (or -d if your git version is older than 1.8.0):
 git push --delete origin tagname
 
-If you also need to delete the local tag, use:
-
+//If you also need to delete the local tag, use:
 git tag --delete tagname
+
+//Get a list of all remote branches
+git remote show origin
