@@ -65,3 +65,13 @@ git tag --delete tagname
 
 //Get a list of all remote branches
 git remote show origin
+
+
+// Clean the repo to a fresh pull
+git fetch --all
+
+//Then, you have two options:
+git reset --hard origin/master
+
+//OR If you are on some other branch:
+git reset --hard origin/<branch_name>
